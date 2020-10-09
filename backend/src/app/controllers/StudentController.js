@@ -50,6 +50,48 @@ class StudentController {
             email,
         });
     }
+
+    async update(req, res) {
+        const schema = Yup.object().shape({
+            name: Yup.string().required(),
+            email: Yup.string().email().required(),
+        });
+
+        if (!(await schema.isValid(req.body))) {
+            return res.status(400).json({ error: 'Faltam dados' });
+        }
+
+        const { RA } = req.params;
+
+        const student = await Student.findByPk(RA);
+        if (!student) {
+            return res.status(404).json({ error: 'Estudante não encontrado' });
+        }
+
+        const { name, email } = await student.update(req.body);
+
+        return res.json({
+            RA,
+            name,
+            email,
+        });
+    }
+
+    async destroy(req, res) {
+        const { RA } = req.params;
+
+        const student = await Student.findByPk(RA, {
+            attributes: ['RA', 'name', 'email'],
+        });
+
+        if (!student) {
+            return res.status(404).json({ error: 'Estudante não encontrado' });
+        }
+
+        await student.destroy();
+
+        return res.json({ message: 'Estudante removido com sucesso' });
+    }
 }
 
 export default new StudentController();
