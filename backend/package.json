@@ -10,7 +10,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "sequelize": "^6.3.5",
-    "tedious": "^9.2.1"
+    "tedious": "^9.2.1",
+    "yup": "^0.29.3"
   },
   "devDependencies": {
     "eslint": "^7.10.0",
