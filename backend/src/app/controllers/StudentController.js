@@ -2,6 +2,28 @@ import * as Yup from 'yup';
 import Student from '../models/Student';
 
 class StudentController {
+    async index(req, res) {
+        const response = await Student.findAll({
+            attributes: ['RA', 'name', 'email'],
+        });
+
+        return res.json(response);
+    }
+
+    async show(req, res) {
+        const { RA } = req.params;
+
+        const response = await Student.findByPk(RA, {
+            attributes: ['RA', 'name', 'email'],
+        });
+
+        if (!response) {
+            return res.status(404).json({ error: 'Estudante não encontrado' });
+        }
+
+        return res.json(response);
+    }
+
     async store(req, res) {
         const schema = Yup.object().shape({
             RA: Yup.string().min(5).max(5).required(),
