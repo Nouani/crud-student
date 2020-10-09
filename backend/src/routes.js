@@ -1,9 +1,17 @@
 import { Router } from 'express';
 
+import Student from './app/models/Student';
+
 const routes = new Router();
 
-routes.get('/', (req, res) => {
-    return res.json({ message: 'Hello World' });
+routes.get('/', async (req, res) => {
+    const student = await Student.create({
+        RA: '19194',
+        name: 'nametest',
+        email: 'name@gmail.com',
+    });
+
+    return res.json(student);
 });
 
 export default routes;
