@@ -1,28 +1,28 @@
 <p align="center">
-  <img alt="GoStack-Logo" src="https://user-images.githubusercontent.com/49238044/91108948-dcd56980-e64f-11ea-80e1-01fa8940981e.png" height="200px"/>
+  <img alt="Repo-Logo" src="https://user-images.githubusercontent.com/49238044/96206074-7fb6af80-0f3e-11eb-8d1e-2d0a09bf3c8e.png" height="200px"/>
 </p>
 
 ---
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Nouani/temperature-unit-converter.svg">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Nouani/crud-student.svg">
 
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Nouani/temperature-unit-converter.svg">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Nouani/crud-student.svg">
 
-  <a href="https://www.codacy.com/app/Nouani/temperature-unit-converter?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nouani/temperature-unit-converter&amp;utm_campaign=Badge_Grade">
+  <a href="https://www.codacy.com/app/Nouani/crud-student?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nouani/crud-student&amp;utm_campaign=Badge_Grade">
     <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/1b577a07dda843aba09f4bc55d1af8fc.svg">
   </a>
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Nouani/temperature-unit-converter.svg">
-  <a href="https://github.com/Nouani/temperature-unit-converter/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Nouani/temperature-unit-converter.svg">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Nouani/crud-student.svg">
+  <a href="https://github.com/Nouani/crud-student/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Nouani/crud-student.svg">
   </a>
 
-  <a href="https://github.com/Nouani/temperature-unit-converter/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/Nouani/temperature-unit-converter.svg">
+  <a href="https://github.com/Nouani/crud-student/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/Nouani/crud-student.svg">
   </a>
 
-  <img alt="GitHub" src="https://img.shields.io/github/license/Nouani/temperature-unit-converter.svg">
+  <img alt="GitHub" src="https://img.shields.io/github/license/Nouani/crud-student.svg">
 </p>
 
 
@@ -34,22 +34,29 @@
 </p>
 
 <p align="center">
-  <img alt="Demo" src="https://user-images.githubusercontent.com/49238044/91109011-0db59e80-e650-11ea-91c4-a65494c45a62.gif"
+  <img alt="Demo" src="https://user-images.githubusercontent.com/49238044/96206288-f81d7080-0f3e-11eb-9ade-0fe7abcf1251.gif"
   style="height: 10px;"/>
 </p>
 
 ## :page_with_curl: Description
 
-A simple application developed in Java for android. When passing a numerical value admitted as degrees celius, it performs the conversion calculation for fahrenheit and kelvin. Finally, the result of conversions is displayed on a second screen.
+Android application consuming a RESTful API developed in Node. The ultimate goal was to conduct a full CRUD of students
 
 ## :information_source: How To Use
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Nouani/temperature-unit-converter.git
+$ git clone https://github.com/Nouani/crud-student.git
+
+# install dependencies
+$ cd backend
+$ yarn
+
+# start api
+$ yarn dev
 ```
 
-#### Note: Necessary to have android studio and android API equal to or above 26
+#### Note: You must have Android Studio and Android API equal to or greater than 26. In addition to the yarn for API.
 
 ## :person_with_blond_hair: Author Info
 
