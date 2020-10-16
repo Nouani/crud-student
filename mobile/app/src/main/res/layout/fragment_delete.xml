@@ -40,19 +40,21 @@
             android:fontFamily="@font/nunito_semibold"
             android:inputType="number"
             android:paddingHorizontal="20dp"
-            android:paddingVertical="10dp"
+            android:paddingVertical="5dp"
             android:textColor="#999"
             android:textSize="16sp" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnCadastrar"
+        android:id="@+id/btnDeletar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:background="@drawable/remover_btn"
         android:fontFamily="@font/nunito_bold"
         android:text="Remover"
-        android:textColor="#FFF" />
+        android:textColor="#FFF"
+        style="?android:attr/borderlessButtonStyle"
+        />
 
 </LinearLayout>

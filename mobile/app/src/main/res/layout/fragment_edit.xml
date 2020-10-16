@@ -39,7 +39,7 @@
             android:fontFamily="@font/nunito_semibold"
             android:inputType="number"
             android:paddingHorizontal="20dp"
-            android:paddingVertical="10dp"
+            android:paddingVertical="5dp"
             android:textColor="#999"
             android:textSize="16sp" />
     </LinearLayout>
@@ -66,7 +66,7 @@
             android:fontFamily="@font/nunito_semibold"
             android:inputType="text"
             android:paddingHorizontal="20dp"
-            android:paddingVertical="10dp"
+            android:paddingVertical="5dp"
             android:textColor="#999"
             android:textSize="16sp" />
     </LinearLayout>
@@ -93,19 +93,21 @@
             android:fontFamily="@font/nunito_semibold"
             android:inputType="textEmailAddress"
             android:paddingHorizontal="20dp"
-            android:paddingVertical="10dp"
+            android:paddingVertical="5dp"
             android:textColor="#999"
             android:textSize="16sp" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnCadastrar"
+        android:id="@+id/btnEditar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="@drawable/create_btn"
         android:fontFamily="@font/nunito_bold"
         android:text="Editar"
-        android:textColor="#FFF" />
+        android:textColor="#FFF"
+        style="?android:attr/borderlessButtonStyle"
+        />
 
 </LinearLayout>
